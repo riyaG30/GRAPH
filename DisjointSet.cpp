@@ -4,8 +4,10 @@ class DisjointSet
 {
 public:
     vector<int> rank, parent, size;
+    //! constructor
     DisjointSet(int n)
     {
+
         rank.resize(n + 1, 0); // as 1 based indexing
         parent.resize(n + 1);
         size.resize(n + 1);
